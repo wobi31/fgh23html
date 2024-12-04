@@ -1,3 +1,8 @@
+body{
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
 .img:hover {
   width: 100px;
   background-color: red;
@@ -13,4 +18,19 @@
   transform: scale(1.1);
   transition: transform 0.3s ease;
   box-shadow: 10px 10px 10px #04242c ;
+}
+article{
+  display: flex;
+  justify-content: space-around;
+}
+.card2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px #880e4f;
+}
+.card2:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 10px 10px 10px #c2185b ;
 }
