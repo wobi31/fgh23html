@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Form Search -->
+  <form action="http://127.0.0.1:5500/form.html" method="get">
+    <label for="seacrh">Search</label>
+    <input type="text" id="seacrh" name="query" placeholder="seacrh...">
+    <button>Serch</button>
+  </form>
+
+  <!-- Form Login -->
+  <form action="http://127.0.0.1:5500/form/PageLogin.html">
+    <h1>Form Login</h1>
+    <!-- (label+input)*2 -->
+    <label for="Lgemeil">Email</label>
+    <input type="text" name="email" id="Lgemeil">
+    <label for="Lgpassword">password</label>
+    <input type="password" id="Lgpassword" name="password">
+    <button>Login</button>
+  </form>
+
+  <!-- Form Register -->
+  <form action="http://127.0.0.1:5500/form/Register.html" method="get">
+    <h1>Form Register</h1>
+    <!-- (label+input)*2 -->
+    <label for="LgUsername">User Name</label>
+    <input type="text" name="email" id="LgUsername">
+    <label for="Lgpassword">password</label>
+    <input type="password" id="Lgpassword" name="password">
+    <button>Register</button>
+  </form>
+
+  <form action="">
+    <h3>Survei Rokok</h3>
+    <label for="name">Siapa nama anda?</label>
+    <input type="text" id="Name">
+    <label for="age">Berapa umur anda?</label>
+    <input type="number" id="age">
+    <label for="gd-male">Jenis kelamin?</label>
+    <div>
+      <div>
+        <label for="gd-male">Male</label>
+        <input type="radio" name="gd-female" value="Gender" id="gd-male">
+      </div>
+      <div>
+        <label for="gd-female">Female</label>
+        <input type="radio" name="gd-female" value="Gender" id="gd-female">
+      </div>
+    </div>
+    <label for="False">Apakah anda perokok?</label>
+    <div>
+
+      <div>
+        <label for="true">Ya</label>
+        <input type="radio">
+      </div>
+      <div>
+        <label for="False">Tidak</label>
+        <input type="radio" id="False">
+      </div>
+    </div>
+    <label for="no">Roko yang pernah anda coba?</label>
+    <div>
+      <input type="checkbox" name="" id="ggm">
+      <label for="ggm">Gudang-garam Merah</label>
+    </div>
+    <div>
+      <input type="checkbox" name="" id="Juara">
+      <label for="Juara">Juara</label>
+    </div>
+    <div>
+      <input type="checkbox" name="" id="Magnum">
+      <label for="Magnum">Magnum</label>
+    </div>
+    <div>
+      <input type="checkbox" name="" id="">
+      <label for="ggm">Promaile</label>
+    </div>
+    <div>
+      <input type="checkbox" name="no" id="no">
+      <label for="no">Tidak pernah coba?</label>
+    </div>
+    <label for="">Alasan jika perna merokok</label>
+    <textarea rows="2" cols="20" type="text" name="" id=""></textarea>
+  </form>
+</body>
+
+</html>

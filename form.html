@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    main {
+      display: flex;
+      height: 500px;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      padding-left: 35px;
+      height: 30px;
+    }
+
+    input:hover {
+      cursor: pointer;
+    }
+
+    /* div { */
+    /* position: relative; */
+    /* bottom: 28px; */
+    /* width: 50px; */
+    /* left: 10px; */
+    /* } */
+    div {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <form action="">
+      <label for="pass">password</label>
+      <input type="password" id="pass" placeholder="Input your password" name="password">
+      <!-- <div><img src="aseet/view.png" alt=""></div> -->
+    </form>
+    <!-- Form Search -->
+    <form action="http://127.0.0.1:5500/form.html" method="get">
+      <input type="text" id="email" name="query" placeholder="seacrh...">
+      <button>Serch</button>
+    </form>
+    <!-- Post -->
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+     
+      <input type="text" name="title" id="">
+      <input type="text" name="body" id="">
+      <input type="text" name="userId" id="">
+      <button>Submit</button>
+    </form>
+
+    <form action="">
+      <h1>Form Login</h1>
+      <label for="Lgemeil">Email</label>
+      <input type="text" name="email" id="Lgemeil">
+      <label for="Lgpassword">password</label>
+      <input type="password" id="Lgpassword" name="password">
+    </form>
+
+    <form action="">
+      <h1>Porfile</h1>
+      <label for="name">Name</label>
+      <input type="text" id="name">
+      <label for="Gender">Gender</label>
+      <div>
+        <label for="gd-male">Male</label>
+        <input name="Gender" value="Gender" type="radio" id="gd-male">
+        <label for="gd-female">Female</label>
+        <input name="Gender" value="Gender" type="radio" id="gd-female">
+      </div>
+      <label for="">Hobbies</label>
+      <div>
+        <label for="h-haiking">Haiking</label>
+        <input name="hobby" type="checkbox" id="h-hiking">
+        <label for="h-jogingg">Jogging</label>
+        <input name="hobby" type="checkbox" id="h-jogingg">
+        <label for="h-swiming">Swiming</label>
+        <input name="hobby" type="checkbox" id="h-swiming">
+        <label for="h-Fising">Fising</label>
+        <input name="hobby" type="checkbox" id="h-Fising">
+        <label for="h-other">Other</label>
+        <input name="hobby" type="checkbox" id="h-other">
+      </div>
+      <label for="p-city">city</label>
+      <select name="city" id="p-city">
+        <option value="default" hidden>Pilih domisili</option>
+        <option value="jakarta">Jakarta</option>
+        <option value="Bandung">Bandung</option>
+        <option value="Surakarta">Surakarta</option>
+        <option value="Buki-Tinggi">Buki-Tinggi</option>
+      </select>
+      <label for="">Selft Directio</label>
+      <input type="text" placeholder="My description">
+      <div>
+        <button>edit frofiel</button>
+        <button>submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
