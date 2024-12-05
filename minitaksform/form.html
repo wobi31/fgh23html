@@ -35,7 +35,7 @@
   </form>
 
   <!-- Form Login -->
-  <form action="http://127.0.0.1:5500/form/PageLogin.html">
+  <form action="http://127.0.0.1:5500/minitaksform/PageLogin.html">
     <h1>Form Login</h1>
     <!-- (label+input)*2 -->
     <label for="Lgemeil">Email</label>
@@ -75,9 +75,8 @@
     </div>
     <label for="False">Apakah anda perokok?</label>
     <div>
-
       <div>
-        <label for="true">Ya</label>
+        <label  for="true">Ya</label>
         <input id="true" type="radio">
       </div>
       <div>
@@ -94,7 +93,8 @@
         <option for="Promaile">Promaile</option>
     </select>
     <label for="">Alasan jika pernah merokok</label>
-    <textarea rows="2" cols="20" type="text" name="" id=""></textarea>
+    <textarea rows="2" cols="20" type="text" maxlength="50" name="" id="" placeholder="My description"></textarea>
+    <!-- max-length jumlah karakter huruf yang bisa di masukan  -->
   </form>
 </body>
 
