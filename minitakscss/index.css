@@ -1,0 +1,70 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.div {
+  width: 500px;
+  background-color: purple;
+}
+
+.div:hover {
+  width: 800px;
+  border-radius: 10px;
+}
+
+#span {
+  color: lime;
+}
+
+#span:hover {
+  width: 900px;
+  background-color: red;
+  color: skyblue;
+  transition: 1.5s;
+}
+
+section {
+  display: flex;
+  gap: 45px;
+}
+
+article {
+  width: 80px;
+  height: 60px;
+  background-color: purple;
+}
+
+article:hover {
+  transition: 1.5s;
+  border-radius: 100px;
+  background-color: skyblue;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.box1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.box2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
