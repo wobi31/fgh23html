@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modify domjs styling</title>
+  <script src="day2.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      justify-content: space-around;
+    }
+
+    form {
+      width: 200px;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form>button,button {
+      background-color: greenyellow;
+    }
+
+    form>button:focus{
+      color: white;
+      background-color: green;
+    }
+
+    article,section>div:first-child {
+      background-color: gray;
+      height: 100px;
+      width: 800px;
+      border: 2px solid gainsboro;
+      border-radius: 6px;
+      /* al */
+      font-size: 40px;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      padding: 10px;
+      text-align: end;
+    }
+
+    button:hover,button {
+      cursor: pointer;
+    }
+    textarea{
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="">
+    <label for="email">Email</label>
+    <input type="email" id="email">
+    <label for="pwd">Password</label>
+    <input type="password" id="pwd">
+    <div>
+      <label for="show-pwd">Show Password</label>
+      <input type="checkbox" id="show-pwd" onchange="change()">
+    </div>
+    <button>Login</button>
+  </form>
+  <article>
+    <button type="button" onclick="colorRandom()">Chang color</button>
+  </article>
+  <section>
+    <div>
+      <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+    </div>
+    <div>
+      <textarea cols="35" name="textarea" rows="8" id=""></textarea>
+    </div>
+    <button type="button" onclick="changeText()">Change text</button>
+  </section>
+</body>
+
+</html>

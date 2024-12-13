@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Taks day2</title>
+  <script src="minitkasdomjsday2.js" defer></script>
+  <style>
+    /* main{ */
+    /* display: flex; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
+    /* } */
+    /* section>div:first-child{ */
+    /* width: 1000px; */
+    /* height: 500px; */
+    /* background-color: lightblue; */
+    /* } */
+    article{
+      display: flex;
+      gap: 10px;
+    }
+    article>div:first-child {
+      width: 400px;
+      max-height: 1000px;
+      border-radius: 8px;
+      border: 2px solid grey;
+      background-color: skyblue;
+    }
+    article>button{
+      height: 70px;
+      border: 2px solid skyblue;
+      /* border: none; */
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div id="h1"></div>
+      <button onclick="changText()">change new taxe</button>
+    </section>
+    <article>
+      <div>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <button onclick="addList()">add new list</button>
+    </article>
+  </main>
+</body>
+
+</html>
