@@ -19,10 +19,11 @@
     /* height: 500px; */
     /* background-color: lightblue; */
     /* } */
-    article{
+    article {
       display: flex;
       gap: 10px;
     }
+
     article>div:first-child {
       width: 400px;
       max-height: 1000px;
@@ -30,11 +31,65 @@
       border: 2px solid grey;
       background-color: skyblue;
     }
-    article>button{
+
+    article>div:nth-child(3) {
+      border-radius: 8px;
+      border: 2px solid grey;
+      width: 700px;
+      gap: 10px;
+      padding-top: 20px;
+      padding-left:20px ;
+      display: flex;
+      flex-direction: column;
+      max-height: 1000px;
+      background-color: tomato;
+    }
+
+    article>div:nth-child(3)>div {
+      width: 80px;
+      height: 80px;
+      gap: 10px;
+      background-color: skyblue;
+      border-radius: 8px;
+      border: none;
+    }
+
+    article>button {
       height: 70px;
       border: 2px solid skyblue;
       /* border: none; */
       border-radius: 5px;
+    }
+
+    table,
+    th,
+    td {
+      width: 200px;
+      max-height: 1000px;
+      border: 2px solid black;
+    }
+
+    td {
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #id {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 1000px;
+      background-color: skyblue;
+    }
+
+    #id>div {
+      width: 80px;
+      height: 80px;
+      background-color: tomato;
+      border-radius: 8px;
+      border: none;
     }
   </style>
 </head>
@@ -52,6 +107,11 @@
         </ul>
       </div>
       <button onclick="addList()">add new list</button>
+      <div id="div">
+        <div></div>
+      </div>
+      <button onclick="addTr()">New Table</button>
+      <button onclick="Reset()">Resset</button>
     </article>
   </main>
 </body>

@@ -7,16 +7,26 @@ function changText() {
 }
 
 function addList() {
-  const list = ["list 1", "list 2", "list 3", "list 4"];
-  const getul = document.querySelector("ul");
-  for (let index = 0; index < list.length; index++) {
-    const newIl = document.createElement("li");
-    newIl.textContent = list[i];
-    getul.appendChild;(newIl)
+  const getUl = document.querySelector("ul")
+  for(let i = 0; i<getUl; i++){
+    const li = document.createElement("li")
+    getUl.appendChild(li)
   }
-  // return;
+  // const newli = document.createElement("li");
+  // newli.innerHTML = "";
   // document.querySelector("ul").appendChild(newli);
-}
 
-console.log("hallo");
-/5/ 
+}
+function addTr() {
+  const getTr = document.createElement("div");
+  getTr.innerHTML = "";
+  document.querySelector("#div").appendChild(getTr);
+}
+function Reset() {
+  const getPlace = document.querySelector("#div");
+  while(getPlace.firstChild){
+    getPlace.removeChild(getPlace.firstChild)
+  }
+  getPlace.insertAdjacentElement("#div")
+
+}
