@@ -6,16 +6,16 @@ function changText() {
   getNewtext.textContent = "its text textContent";
 }
 
+const list = [1,2,3,4];
 function addList() {
-  const getUl = document.querySelector("ul")
-  for(let i = 0; i<getUl; i++){
-    const li = document.createElement("li")
-    getUl.appendChild(li)
+  const getUl = document.querySelector("ul");
+  for (let i = 0; i < list.length; i++) {
+    const creatli = document.createElement("li");
+    creatli.textContent = list[i];
+    // creatli.style.background = "orange";
+    getUl.appendChild(creatli);
+    console.log(getUl);
   }
-  // const newli = document.createElement("li");
-  // newli.innerHTML = "";
-  // document.querySelector("ul").appendChild(newli);
-
 }
 function addTr() {
   const getTr = document.createElement("div");
@@ -24,9 +24,8 @@ function addTr() {
 }
 function Reset() {
   const getPlace = document.querySelector("#div");
-  while(getPlace.firstChild){
-    getPlace.removeChild(getPlace.firstChild)
+  while (getPlace.firstChild) {
+    getPlace.removeChild(getPlace.firstChild);
   }
-  getPlace.insertAdjacentElement("#div")
-
+  getPlace.insertAdjacentElement("#div");
 }
