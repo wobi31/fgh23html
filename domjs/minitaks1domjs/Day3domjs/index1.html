@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="index.js" defer></script>
+  <style>
+    form{
+      padding: 10px;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 6px;
+      box-shadow: 2px 2px 2px black;
+    }
+    form>div{
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <form id="form" action="">
+    <div>
+      <label for="namaDepan">Nama</label>
+      <input type="text" id="namaDepan" name="namaDepan">
+    </div>
+    <div>
+      <label for="Gender">Gender</label>
+      <input type="text" name="male" id="Gender">
+    </div>
+    <button>Submit</button>
+  </form>
+</body>
+</html>

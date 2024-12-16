@@ -58,15 +58,15 @@
 
 <body>
   <form action="">
-    <label for="email">Email</label>
-    <input type="email" id="email">
-    <label for="pwd">Password</label>
-    <input type="password" id="pwd">
+    <!-- <label for="email">Email</label> -->
+    <input type="email" name="email" id="email">
+    <!-- <label for="pwd">Password</label> -->
+    <input type="password" name="pass" id="pwd">
     <div>
       <label for="show-pwd">Show Password</label>
       <input type="checkbox" id="show-pwd" onchange="change()">
     </div>
-    <button>Login</button>
+    <button onclick="handleQuery()">Login</button>
   </form>
   <article>
     <button type="button" onclick="colorRandom()">Chang color</button>
