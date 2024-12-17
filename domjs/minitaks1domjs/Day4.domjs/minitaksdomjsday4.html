@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="minitaksdomjsday4.js" defer></script>
+  <style>
+    main{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+    form{
+      width: 230px;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      align-items: center;
+      flex-direction: column;
+      border: 2px solid grey;
+      box-shadow: 2px 2px 2px black;
+    }
+    input,button{
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <form onsubmit="form(event)" action="">
+      <input type="text" name="name">
+      <input type="text" name="body">
+      <input type="text" name="id">
+      <button type="submit">Submit</button>
+    </form>
+    <button onclick="btn()">clilk</button>
+    <div id="resultData"></div>
+  </main>
+</body>
+
+</html>
