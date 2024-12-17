@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Validasi Form</title>
   <script src="index.js" defer></script>
   <style>
-    form{
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    form {
       padding: 10px;
       gap: 10px;
       display: flex;
@@ -15,24 +22,77 @@
       border-radius: 6px;
       box-shadow: 2px 2px 2px black;
     }
-    form>div{
+
+    form>div {
       gap: 10px;
       display: flex;
       flex-direction: column;
     }
+
+    .gender,
+    form>div:nth-child(9) {
+      display: flex;
+      flex-direction: row;
+    }
   </style>
 </head>
+
 <body>
   <form id="form" action="">
     <div>
-      <label for="namaDepan">Nama</label>
-      <input type="text" id="namaDepan" name="namaDepan">
+      <label for="name">Nama</label>
+      <input type="text" id="name" name="name" required>
     </div>
     <div>
       <label for="Gender">Gender</label>
-      <input type="text" name="male" id="Gender">
+      <input type="text" name="Gender" id="Gender" required>
     </div>
-    <button>Submit</button>
+    <button type="submit">Submit</button>
+    <div id="data"></div>
+  </form>
+  <!-- form 2 -->
+  <form id="myform2" action="">
+    <h4>Survei Rokok</h4>
+    <label for="name">Siapa nama anda?</label>
+    <input type="text" name="name" id="Name" required>
+    <label for="Age">Berapa umur anda?</label>
+    <input type="text" name="Age" id="Age" required>
+    <label for="">Jenis kelamin?</label>
+    <div class="gender">
+      <div>
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" value="Male" id="Male" required>
+      </div>
+      <div>
+        <label for="Famele">Female</label>
+        <input type="radio" name="Gender" value="Famele" id="Famele" required>
+      </div>
+    </div>
+    <label for="">Apakah anda perokok?</label>
+    <div>
+      <div>
+        <label for="true">Ya</label>
+        <input id="true" value="true" name="merokok" value="true" type="radio" required>
+      </div>
+      <div>
+        <label for="false">Tidak</label>
+        <input id="false" value="false" name="merokok" value="false" type="radio" required>
+      </div>
+    </div>
+    <label for="Rokok">Roko yang pernah anda coba?</label>
+    <select name="Rokok" id="Rokok" >
+      <option value="default" for="no">Tidak pernah coba?</option>
+      <option for="Gudang-garam">Gudang-garam Merah</option>
+      <option for="Juara">Juara</option>
+      <option for="Magnum">Magnum</option>
+      <option for="Promaile">Promaile</option>
+    </select>
+    <label for="">Alasan jika pernah merokok</label>
+    <textarea rows="2" cols="20" type="text" maxlength="50" name="" id="" nama="text" value="textarea" placeholder="My description" required></textarea>
+    <!-- max-length jumlah karakter huruf yang bisa di masukan  -->
+    <button type="submit">submit</button>
+    <div id="resultinput"></div>
   </form>
 </body>
+
 </html>
