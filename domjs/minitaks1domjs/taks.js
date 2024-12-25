@@ -6,9 +6,8 @@ box[0].style.backgroundColor = 'blue';
 box[1].style.backgroundColor = 'blue';
 box[2].style.backgroundColor = 'blue';
 box[3].style.backgroundColor = 'blue';
-
 const s = document.getElementById("s")
-
+s.textContent
 let width = window.innerWidth
 let heigh = window.innerHeight
 

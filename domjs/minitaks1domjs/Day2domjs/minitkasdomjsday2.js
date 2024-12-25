@@ -8,8 +8,8 @@ function changText() {
 }
 
 const list = [1, 2, 3, 4];
+const getUl = document.querySelector("ul");
 function addList() {
-  const getUl = document.querySelector("ul");
   for (let i = 0; i < list.length; i++) {
     const creatli = document.createElement("li");
     creatli.textContent = list[i];
